@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
     // const body = document.getElementById('body');
     // const html = document.getElementById('html');
     // const intViewportHeight = window.innerHeight
-    // const intViewportWidth = window.screen.width
+    // const intViewportWidth = window.innerWidth
 
     // console.log(intViewportWidth, 'intViewportWidth')
     // app.style.height = `${intViewportHeight}px`;
