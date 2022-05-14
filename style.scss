@@ -1,3 +1,4 @@
+$yellow: #FFC500;
 
 html {
   overflow: hidden;
@@ -50,7 +51,7 @@ h1 {
 
 a {
   text-decoration-style: dotted;
-text-decoration: underline dashed #CBAB2D;
+text-decoration: underline dashed $yellow;
 }
 
 .menu-there {
@@ -77,7 +78,7 @@ text-decoration: underline dashed #CBAB2D;
       left: 35px;
       max-width: 200px;
       transform: rotate(135deg);
-      fill: #CBAB2D;
+      fill: $yellow;
       z-index: -1;
     }
   }
@@ -104,7 +105,7 @@ text-decoration: underline dashed #CBAB2D;
       left: 35px;
       max-width: 200px;
       transform: scale(1, -1) rotate(-36deg);
-      fill: #CBAB2D;
+      fill: $yellow;
       z-index: -1;
     }
   }
@@ -132,7 +133,7 @@ text-decoration: underline dashed #CBAB2D;
     top: -40px;
     height: 100px;
     width: 100px;
-    fill: #CBAB2D;
+    fill: $yellow;
     z-index: -1;
   }
 }
@@ -168,7 +169,7 @@ text-decoration: underline dashed #CBAB2D;
     font-size: 30px;
     font-weight: bold;
     &:hover {
-      text-decoration: #CBAB2D;
+      text-decoration: $yellow;
       text-decoration-line: line-through;
     }
   }
@@ -209,7 +210,7 @@ text-decoration: underline dashed #CBAB2D;
       background: #2F2F2F;
     }
     &::-webkit-scrollbar-thumb {
-      background: #CBAB2D;
+      background: $yellow;
     }
   }
 }
@@ -232,7 +233,7 @@ text-decoration: underline dashed #CBAB2D;
     font-size: 30px;
     font-weight: bold;
     &:hover {
-      text-decoration: #CBAB2D;
+      text-decoration: $yellow;
       text-decoration-line: line-through;
     }
   }
@@ -274,7 +275,7 @@ text-decoration: underline dashed #CBAB2D;
     font-size: 30px;
     font-weight: bold;
     &:hover {
-      text-decoration: #CBAB2D;
+      text-decoration: $yellow;
       text-decoration-line: line-through;
     }
   }
