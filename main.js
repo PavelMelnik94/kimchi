@@ -1,3 +1,5 @@
+import './normalize.css'
+import './reset.css'
 import './style.scss'
 import {WiredCard} from 'wired-elements'
 import { menu1, menu2, menu3 } from './data'
@@ -15,11 +17,11 @@ window.addEventListener('load', () => {
 
     console.log(intViewportWidth, 'intViewportWidth')
     app.style.height = `${intViewportHeight}px`;
-    app.style.minWidth = `${intViewportWidth}px`;
+    app.style.minWidth = `100%`;
     body.style.height = `${intViewportHeight}px`;
-    body.style.minWidth = `${intViewportWidth}px`;
+    body.style.minWidth = `100%`;
     html.style.height = `${intViewportHeight}px`;
-    html.style.minWidth = `${intViewportWidth}px`;
+    html.style.minWidth = `100%`;
 
 
     const storage = window.localStorage
