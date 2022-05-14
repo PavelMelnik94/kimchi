@@ -1,0 +1,17 @@
+{
+  "name": "hummus-kimchi",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.9.9"
+  },
+  "dependencies": {
+    "sass": "^1.51.0",
+    "wired-elements": "^3.0.0-rc.6"
+  }
+}

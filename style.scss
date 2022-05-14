@@ -1,0 +1,397 @@
+
+html {
+  overflow: hidden;
+  font-family: 'Amatic SC', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #181818;
+  position: relative;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.flex {
+  &-column {
+    display: flex;
+    flex-direction: column;
+  }
+  &-between {
+    display: flex!important;
+    flex-direction: row;
+    justify-content: space-between !important;
+  }
+}
+
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 100px;
+}
+
+h1 {
+  transform: rotate(-15deg);
+  z-index: -5;
+}
+
+
+
+.menu-there {
+  cursor: pointer;
+  position: absolute;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-left: 15px;
+  top: 10%;
+
+  span {
+    margin-left: 15px;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .arrow-left {
+    svg {
+      position: absolute;
+      top: -59px;
+      left: 35px;
+      max-width: 200px;
+      transform: rotate(135deg);
+      fill: #CBAB2D;
+      z-index: -1;
+    }
+  }
+}
+
+.order-there {
+  cursor: pointer;
+  position: absolute;
+  font-size: 80px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+  right: 10px;
+
+  span {
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  .arrow-right {
+    svg {
+      position: absolute;
+      //top: -100px;
+      top: -67px;
+      left: 35px;
+      max-width: 200px;
+      //transform: rotate(-35deg);
+      transform: scale(1, -1) rotate(-36deg);
+      fill: #CBAB2D;
+      z-index: -1;
+    }
+  }
+}
+
+.contacts {
+  cursor: pointer;
+  font-size: 65px;
+  position: absolute;
+
+  bottom: 5px;
+  left: 50%;
+
+  span {
+    position: relative;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  svg {
+    position: absolute;
+    left: -40px;
+    transform: scale(-1, 1);
+    top: -40px;
+    height: 100px;
+    width: 100px;
+    fill: #CBAB2D;
+    z-index: -1;
+  }
+}
+
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.divider {
+    width: 95% ;
+    margin: 0 auto;
+}
+
+.menu-list {
+  visibility: hidden;
+  top: 15px;
+  position: absolute;
+  background: snow;
+  //width: 99%;
+  //min-width: 370px;
+  //width: fit-content;
+  width: 50%;
+  height: 90vh;
+  z-index: 5;
+  left: 25%;
+
+  &__close {
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    &:hover {
+      text-decoration: #CBAB2D;
+      text-decoration-line: line-through;
+    }
+  }
+  &__content {
+    //display: grid;
+    //grid-template-columns: 300px 618px;
+    //grid-col-gap: 2rem;
+    //grid-column-gap: 2rem;
+    width: 98%;
+
+
+    box-sizing: border-box;
+    //margin-top: 20px;
+    padding: 1.5rem;
+    max-height: 75vh;
+    //max-width: 337px;
+    //width: 500px;
+    overflow-y: scroll;
+
+    .menu-list__content-group--title {
+      font-size: 55px;
+      font-weight: bold;
+    }
+    .menu-list__content-group:not(:nth-child(1)) {
+      margin-top: 25px;
+    }
+    .menu-list__content-group__section-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 35px;
+      font-weight: bold;
+      border-bottom: 1px dashed #181818;
+    }
+    .menu-list__content-group__section-item--description {
+      font-size: 20px;
+    }
+
+    .menu-list__content-group__section-item--additional {
+      margin-top: 15px;
+      font-size: 27px;
+      font-weight: bold;
+    }
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+    &::-webkit-scrollbar-track {
+      background: #2F2F2F;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #CBAB2D;
+    }
+  }
+}
+
+.contacts-list {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background: snow;
+  width: 500px;
+  height: 275px;
+  &__close {
+      cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    &:hover {
+      text-decoration: #CBAB2D;
+      text-decoration-line: line-through;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    &-item {
+      font-size: 35px;
+      font-weight: bold;
+     }
+    }
+}
+
+.order-map {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  background: snow;
+  width: 650px;
+  height: 500px;
+  &__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+  }
+  &__close {
+      cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    font-size: 30px;
+    font-weight: bold;
+    &:hover {
+      text-decoration: #CBAB2D;
+      text-decoration-line: line-through;
+    }
+  }
+}
+
+.lang-modal {
+  .lang-quest,
+  .lang-am,
+  .lang-rus {
+    text-align: center;
+  }
+
+  .lang-rus,
+  .lang-am {
+    cursor: pointer;
+    font-size: 55px;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+
+  .lang-quest { font-size: 100px; }
+
+  .lang-rus { margin-right: 10px; }
+}
+
+
+@media (min-width: 320px) and (max-width: 900px) {
+  #app {
+    font-size: 70px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 620px) {
+  .menu-there,
+  .order-there {
+    font-size: 55px;
+      svg {
+        top: -108px !important;
+        max-width: 114px !important;
+      }
+  }
+
+}
+
+@media (min-width: 0px) and (max-width: 650px) {
+  .order-map {
+    max-width: 100%;
+    iframe {
+      width: 100%;
+    }
+     .mapouter,
+     #mapDiv,
+    .gmap_canvas {
+       width: 100% !important;
+     }
+
+  }
+.menu-list {
+  left: 0;
+  width: 99%;
+}
+  .order-map__close,
+  .menu-list__close,
+  .contacts-list__close {
+    font-size: 25px;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+.contacts-list {
+  width: 100%;
+}
+.contacts-list__content-item {
+  font-size: 25px;
+}
+
+
+}
+
+
+
+@media (min-width: 0px) and (max-width: 400px) {
+  .menu-there,
+  .order-there {
+    font-size: 40px;
+      svg {
+        top: -108px !important;
+        max-width: 114px !important;
+      }
+  }
+
+  .menu-there {
+    top: 15%;
+  }
+
+   .order-there {
+    top: 5%;
+    right: 35px;
+  }
+
+  .contacts {
+    span {
+      font-size: 40px;
+    }
+  }
+
+
+
+  #app {
+    font-size: 50px;
+  }
+
+}
