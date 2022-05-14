@@ -32,22 +32,26 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
-  // width: 100vw;
   height: 100vh;
   font-size: 100px;
   overflow: hidden;
+}
+img {
+  max-width: 100px;
+}
+
+
+h1 {
+  transform: rotate(-15deg);
+  z-index: -5;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration-style: dotted;
 text-decoration: underline dashed #CBAB2D;
 }
-h1 {
-  transform: rotate(-15deg);
-  z-index: -5;
-}
-
-
 
 .menu-there {
   cursor: pointer;
@@ -96,11 +100,9 @@ h1 {
   .arrow-right {
     svg {
       position: absolute;
-      //top: -100px;
       top: -67px;
       left: 35px;
       max-width: 200px;
-      //transform: rotate(-35deg);
       transform: scale(1, -1) rotate(-36deg);
       fill: #CBAB2D;
       z-index: -1;
@@ -153,9 +155,6 @@ h1 {
   top: 15px;
   position: absolute;
   background: snow;
-  //width: 99%;
-  //min-width: 370px;
-  //width: fit-content;
   width: 50%;
   height: 97%;
   z-index: 5;
@@ -174,19 +173,10 @@ h1 {
     }
   }
   &__content {
-    //display: grid;
-    //grid-template-columns: 300px 618px;
-    //grid-col-gap: 2rem;
-    //grid-column-gap: 2rem;
     width: 98%;
-
-
     box-sizing: border-box;
-    //margin-top: 20px;
     padding: 1.5rem;
     max-height: 77vh;
-    //max-width: 337px;
-    //width: 500px;
     overflow-y: scroll;
 
     .menu-list__content-group--title {

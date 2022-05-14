@@ -1,4 +1,4 @@
-export const menu1 = [
+export const menu2 = [
     {
         title: 'SIDES',
         options: [
@@ -40,7 +40,7 @@ export const menu1 = [
 ];
 
 
-export const menu2 = [
+export const menu1 = [
     {
         title: 'COMBOS',
         options: [
