@@ -38,6 +38,10 @@ html {
   overflow: hidden;
 }
 
+a {
+  text-decoration-style: dotted;
+text-decoration: underline dashed #CBAB2D;
+}
 h1 {
   transform: rotate(-15deg);
   z-index: -5;
