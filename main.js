@@ -8,10 +8,19 @@ window.addEventListener('load', () => {
 
 
     const app = document.getElementById('app');
+    const body = document.getElementById('body');
+    const html = document.getElementById('html');
     const intViewportHeight = window.innerHeight;
     const intViewportWidth = window.innerWidth;
+
+    console.log(intViewportWidth, 'intViewportWidth')
     app.style.height = `${intViewportHeight}px`;
-    app.style.width = `${intViewportWidth}px`;
+    app.style.minWidth = `${intViewportWidth}px`;
+    body.style.height = `${intViewportHeight}px`;
+    body.style.minWidth = `${intViewportWidth}px`;
+    html.style.height = `${intViewportHeight}px`;
+    html.style.minWidth = `${intViewportWidth}px`;
+
 
     const storage = window.localStorage
 
