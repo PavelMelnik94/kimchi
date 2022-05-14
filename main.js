@@ -5,6 +5,14 @@ import { menu1, menu2, menu3 } from './data'
 
 
 window.addEventListener('load', () => {
+
+
+    const app = document.getElementById('app');
+    const intViewportHeight = window.innerHeight;
+    const intViewportWidth = window.innerWidth;
+    app.style.height = `${intViewportHeight}px`;
+    app.style.width = `${intViewportWidth}px`;
+
     const storage = window.localStorage
 
 //карта открытие\закрытие
